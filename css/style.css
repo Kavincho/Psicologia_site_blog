@@ -184,7 +184,12 @@ Navbar
 */
 
 .nav-links {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .nav {
@@ -200,14 +205,17 @@ Navbar
 .nav-center {
     width: 100%;
     max-width: 1170px;
-    margin-left: 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .nav-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-box-align: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-header img {
@@ -217,13 +225,7 @@ Navbar
 }
 
 .nav-btn {
-    background: transparent;
-    border-color: transparent;
-    color: var(--clr-primary-5);
-    font-size: 2rem;
-    cursor: pointer;
-    /* show later */
-    justify-self: right;
+    display: none; /* Ocultar el botón hamburguesa */
 }
 
 @media screen and (min-width: 768px) {
@@ -252,6 +254,8 @@ Navbar
         letter-spacing: var(--spacing);
         -webkit-transition: var(--transition);
         transition: var(--transition);
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius);
     }
 
     .nav-links a:hover {
@@ -280,6 +284,36 @@ Navbar
     background: var(--clr-white);
     z-index: 2;
     box-shadow: var(--light-shadow);
+}
+
+/* Estilos específicos para móviles */
+@media screen and (max-width: 767px) {
+    .nav {
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+    
+    .nav-links {
+        margin-top: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        background: var(--clr-primary-10);
+        border: 1px solid var(--clr-primary-5);
+    }
+    
+    .nav-links a:hover {
+        background: var(--clr-primary-5);
+        color: var(--clr-white);
+    }
+    
+    .nav-header img {
+        width: 150px;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /*
