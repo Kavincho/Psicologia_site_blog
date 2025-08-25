@@ -236,6 +236,7 @@ Navbar
 
 .nav-btn {
     display: none; /* Ocultar el botón hamburguesa */
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -299,6 +300,7 @@ Navbar
 /* Estilos específicos para móviles */
 @media screen and (max-width: 767px) {
     .nav {
+        background: var(--azul-celeste);
         height: auto;
         padding: 1rem 0.5rem;
     }
@@ -323,6 +325,16 @@ Navbar
     .nav-header img {
         width: 150px;
         margin-bottom: 0.5rem;
+    }
+
+    .navbar-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--morado);
+        z-index: 2;
+        box-shadow: var(--light-shadow);
     }
 }
 
