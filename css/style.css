@@ -241,7 +241,7 @@ Navbar
 
 @media screen and (min-width: 768px) {
     .nav {
-        background: var(--azul-celeste);      
+        background: rgb(247, 255, 253);      
     }
 
     .nav-btn {
@@ -260,7 +260,7 @@ Navbar
 
     .nav-links a {
         text-transform: capitalize;
-        color: var(--blanco);
+        color: var(--negro);
         font-weight: bold;
         letter-spacing: var(--spacing);
         -webkit-transition: var(--transition);
@@ -292,15 +292,15 @@ Navbar
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--morado);
+    background: var(--blanco);
     z-index: 2;
-    box-shadow: var(--light-shadow);
+    box-shadow: var(--negro);
 }
 
 /* Estilos específicos para móviles */
 @media screen and (max-width: 767px) {
     .nav {
-        background: var(--azul-celeste);
+        background: rgb(247, 255, 253);      
         height: auto;
         padding: 1rem 0.5rem;
     }
@@ -315,11 +315,11 @@ Navbar
         padding: 0.4rem 0.8rem;
         background: var(--clr-primary-10);
         border: 1px solid var(--clr-primary-5);
+        color: var(--negro);
     }
     
     .nav-links a:hover {
         background: var(--clr-primary-5);
-        color: var(--clr-white);
     }
     
     .nav-header img {
@@ -332,7 +332,7 @@ Navbar
         top: 0;
         left: 0;
         width: 100%;
-        background: var(--morado);
+        background: var(--blanco);
         z-index: 2;
         box-shadow: var(--light-shadow);
     }
@@ -759,7 +759,7 @@ Featured Blogs
 }
 
 /* end of additional css for different layout*/
-
+blog-footer
 .blog-footer {
     display: flex;
     justify-content: space-between;
@@ -768,8 +768,7 @@ Featured Blogs
 }
 
 .blog-footer p {
-    line-height: 0;
-    margin-bottom: 0;
+    margin-bottom: 1px;
     text-transform: capitalize;
     color: var(--clr-primary-5);
 }
