@@ -234,6 +234,51 @@ Navbar
     margin-bottom: 1px ;
 }
 
+/* Estilos para el título del sitio */
+.site-title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.site-title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.site-title h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--negro);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive para el título */
+@media screen and (min-width: 768px) {
+    .site-title h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .site-title h1 {
+        font-size: 1.7rem;
+    }
+}
+
+
 .nav-btn {
     display: none; /* Ocultar el botón hamburguesa */
     
@@ -241,7 +286,8 @@ Navbar
 
 @media screen and (min-width: 768px) {
     .nav {
-        background: rgb(247, 255, 253);      
+        background: #ebf7ff; 
+        justify-content: center;
     }
 
     .nav-btn {
@@ -270,7 +316,7 @@ Navbar
     }
 
     .nav-links a:hover {
-        color: var(--morado);
+        color: var(--blanco);
     }
 
     .nav-center {
@@ -300,7 +346,7 @@ Navbar
 /* Estilos específicos para móviles */
 @media screen and (max-width: 767px) {
     .nav {
-        background: rgb(247, 255, 253);      
+        background: #ebf7ff;      
         height: auto;
         padding: 1rem 0.5rem;
     }
@@ -321,6 +367,7 @@ Navbar
     .nav-links a:hover {
         background: var(--clr-primary-5);
     }
+    .banner-picture-container
     
     .nav-header img {
         width: 150px;
@@ -425,9 +472,18 @@ Sidebar
 
 /* section title */
 
-.section-title {
+.section-title h1{
     margin-bottom: 2rem;
     text-align: center;
+
+}
+
+
+.section-title h2{
+    color: var(--negro);
+    margin-bottom: 2rem;
+    text-align: center;
+
 }
 
 .underline {
@@ -452,6 +508,12 @@ Sidebar
     background: var(--clr-white);
     /* box-shadow: var(--light-shadow); */
 }
+
+.blog_2{
+    padding-top: 10px;
+    background: var(--clr-white);
+}
+
 
 .banner {
     padding-top: 25px;
@@ -505,6 +567,8 @@ Projects
 .project:hover .project-info {
     opacity: 1;
 }
+
+
 
 .project-img {
     -webkit-transition: var(--transition);
@@ -602,7 +666,7 @@ banner
 
 .banner-picture-container {
     background: var(--azul-celeste);
-    border: 0.5rem solid var(--clr-primary-1);
+    border: 0.5rem solid var(--azul-celeste);
     max-width: 30rem;
     /* extra stuff */
     overflow: hidden;
@@ -790,7 +854,7 @@ Newsletter
 */
 
 .newsletter {
-    background: var(--morado);
+    background: var(--azul-celeste);
     padding: 50px;
 }
 
@@ -799,7 +863,7 @@ Newsletter
 }
 
 .newsletter-title p {
-    color: var(--clr-primary-8);
+    color: var(--blanco);
 }
 
 .newsletter-form {
@@ -810,7 +874,7 @@ Newsletter
 
 .form-control {
     flex: 1 1 auto;
-    color: var(--clr-greb-5);
+    color: var(--negro);
 }
 
 .form-control,
@@ -833,15 +897,19 @@ Newsletter
 .btn-submit {
     font-family: var(--ff-primary);
     margin-left: 0.5rem;
-    background: var(--clr-primary-8);
-    color: var(--clr-primary-1);
+    background: var(--blanco);
+    color: var(--negro);
     cursor: pointer;
     transition: var(--transition);
+    border: 1px solid var(--blanco)
 }
+
+
 
 .btn-submit:hover {
     background: var(--blanco);
     color: var(--negro);
+    border: 2px solid var(--morado)
 }
 
 @media screen and (min-width: 992px) {
@@ -874,7 +942,7 @@ Contact
 }
 
 .contact-title {
-    color: var(--morado);
+    color: var(--negro);
     font-size: 25px;
     font-weight: 400;
 }
@@ -909,7 +977,7 @@ Contact
     display: block;
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid var(--morado);
+    border: 1px solid var(--azul-celeste);
     /* margin-bottom: 1.25rem; */
     background: var(--clr-grey-10);
     border-radius: 3px;
@@ -940,6 +1008,7 @@ Contact
         width: 50%;
     }
 }
+
 
 /* Comment Area */
 
